@@ -4,11 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Accueil</title>
-    <link rel="stylesheet" href="CSS/ResetCSS.css" type="text/css">
+    <title>Connexion</title>
+    <link rel="stylesheet" href="../CSS/ResetCSS.css" type="text/css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link rel="stylesheet" href="CSS/Style.css">
+    <link rel="stylesheet" href="../CSS/login.css">
 </head>
 
 <body>
@@ -39,22 +39,34 @@
             </div>
         </nav>
     </header>
-    <div class="accueil">
-
-        <div id="btn-container">
-            <a href="/Evaluation-10-2023/HTML/register.html">
-                <input type="button" id="btn2" class="input-style" value="S'enregistrer" /></a>
-                <a href="/Evaluation-10-2023/HTML/login.html">
-                <input type="button" id="btn" class="input-style" value="Se connecter" /></a>
+    <h1 id="register-title">Connexion</h1>
+    <div id="register-form-wrapper">
+        <div id="register-form">
+            
+            <form action="" method="post" id="formulaire">
+                <div id="form-container">
+                    <div id="label">
+                    <label class="label-style" for="mail">Adresse E-mail:</label>
+                    <p id="erreur1">Adresse E-mail incorrecte</p>
+                </div>
+                    <input class="input-style" type="text" name="mail" id="mail" placeholder="Votre E-mail" />
+                    <div id="label">
+                    <label class="label-style" for="password">Mot de passe:</label>
+                    <p id="erreur2">Mot de passe incorrect</p>
+                </div>
+                    <input class="input-style" type="password" name="password" id="password"
+                        placeholder="Votre mot de passe" />
+                    <div id="btn-container">
+                        <input id="btn2" class="input-style" type="reset" value="Reset" />
+                        <input id="btn" class="input-style" type="submit" value="Connexion" />
+                    </div>
+            </form>
         </div>
-
     </div>
-
-
-    <script src="JS/Script.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-        crossorigin="anonymous"></script>
+    <script src="../JS/login.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>
