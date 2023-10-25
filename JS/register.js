@@ -73,6 +73,7 @@ document.forms[0].addEventListener("submit", function (evenement) {
         objet[mdp2Obj] = mdpform2;
         localStorage.clear()
         localStorage.setItem("informations", JSON.stringify(objet));
+        alert("Enregistrement réussi")
         document.location.href = "../HTML/login.html"
         evenement.preventDefault();
     }

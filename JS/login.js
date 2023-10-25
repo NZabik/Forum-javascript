@@ -30,6 +30,7 @@ document.forms[0].addEventListener("submit", function (evenement) {
         objetDate[dateObj] = dateform;
         objetDate[heureObj] = heureform;
         localStorage.setItem("Date", JSON.stringify(objetDate));
+        alert("Connexion réussie")
         document.location.href = "../HTML/forum.html"
         evenement.preventDefault();
     }
