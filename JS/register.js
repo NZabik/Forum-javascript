@@ -71,7 +71,6 @@ document.forms[0].addEventListener("submit", function (evenement) {
         objet[emailObj] = mailform;
         objet[mdpObj] = mdpform;
         objet[mdp2Obj] = mdpform2;
-        console.log(objet);
         localStorage.clear()
         localStorage.setItem("informations", JSON.stringify(objet));
         document.location.href = "../HTML/login.html"

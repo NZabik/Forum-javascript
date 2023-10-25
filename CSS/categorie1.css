@@ -1,0 +1,24 @@
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background: url(../images/P1040812.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#register-title {
+    font-size: 64px;
+    text-align: center;
+    margin-top: 20px;
+    color: #000000;
+    font-weight: 700;
+}
+
+
+
+@media only screen and (max-width: 600px)
+{
+}
+@media only screen and (min-width: 601px) and (max-width: 768px)
+{
+}
