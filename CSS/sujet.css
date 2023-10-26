@@ -1,0 +1,22 @@
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background: url(../images/P1040812.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+#register-title {
+    font-size: 64px;
+    text-align: center;
+    color: #000000;
+    font-weight: 700;
+}
+
+#accueil {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 15px;
+    margin-right: 15px;
+}
