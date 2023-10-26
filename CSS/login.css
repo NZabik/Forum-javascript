@@ -1,11 +1,17 @@
+html {
+    margin: 0px;
+    height: 100%;
+    width: 100%;
+ }
 body {
     margin: 0;
     font-family: 'Roboto', sans-serif;
-    background: url(../images/P1040812.jpg);
+    background: url(../images/P1040812-2.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
+    min-height: 100%;
 }
-
 #register-form-wrapper {
     padding: 10% 10%;
 }

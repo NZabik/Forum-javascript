@@ -1,10 +1,29 @@
+:root {
+    --error-color: #dc3545;
+    --success-color: #000000;
+}
+.form-field.error input {
+    border-width: 10px;
+    border: 2px solid var(--error-color);
+}
+
+.form-field.success input {
+    border-color: var(--success-color);
+}
+
+html {
+    margin: 0px;
+    height: 100%;
+    width: 100%;
+ }
 body {
     margin: 0;
     font-family: 'Roboto', sans-serif;
-    background: url(../images/P1040812.jpg);
+    background: url(../images/P1040812-2.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    
+    background-position: center;
+    min-height: 100%;
 }
 
 #register-title {
@@ -28,10 +47,14 @@ body {
     margin: auto;
     width: 98%;
 }
-
+#indic{
+    margin-top: 20px;
+    margin-left: 15px;
+    color: blue;
+}
 #sujet {
-    border: 1px solid rgb(0, 0, 0);
-    width: 100%;
+    width: 95%;
+    height: 50px;
 }
 
 #myTable {
@@ -44,25 +67,29 @@ body {
     background-color: #00A3FF;
     border: 1px solid rgb(0, 0, 0);
     color: white;
+    width: 5%;
 }
 th{
     font-weight: bold;
     text-align: center;
     border: 1px solid rgb(0, 0, 0);
 }
+.auteur{
+    width: 15%;
+}
+.modif{
+    width: 15%;
+}
+.sujet{
+    width: auto;
+}
+.nb{
+    width: 5%;
+}
 td{
     border: 1px solid rgb(0, 0, 0);
+    vertical-align: middle;
 }
-
-.buttonTable {
-    width: 100%;
-}
-.show{
-    display: block;
-}
-
-
-
 
 @media only screen and (max-width: 600px) {
     #register-title {
@@ -70,6 +97,10 @@ td{
     }
 
     #accueil {
+        font-size: 10px;
+
+    }
+    #myTable {
         font-size: 10px;
 
     }
