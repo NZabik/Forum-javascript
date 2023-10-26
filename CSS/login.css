@@ -128,10 +128,31 @@ body {
     #register-title {
         font-size: 25px;
     }
+    #btn {
+        font-size: 15px;
+    }
+    
+    #btn2 {
+        font-size: 15px;
+    }
+    .label-style {
+        font-size: 15px;
+    }
+    
+    .input-style {
+        
+        font-size: 15px;
+    }
+    #register-form-wrapper {
+        padding: 10% 0;
+    }
 }
 @media only screen and (min-width: 601px) and (max-width: 1450px)
 {
     #register-title {
         font-size: 40px;
+    }
+    #register-form-wrapper {
+        padding: 10% 0;
     }
 }
