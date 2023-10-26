@@ -168,6 +168,10 @@ body {
     #register-form-wrapper {
         padding: 10% 0;
     }
+    #register-form {
+        margin-left: 10%;
+        margin-right: 10%;
+    }
 }
 @media only screen and (min-width: 601px) and (max-width: 1450px)
 {
@@ -176,5 +180,9 @@ body {
     }
     #register-form-wrapper {
         padding: 10% 0;
+    }
+    #register-form {
+        margin-left: 10%;
+        margin-right: 10%;
     }
 }
