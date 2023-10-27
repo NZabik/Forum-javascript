@@ -1,4 +1,6 @@
 let deco = document.getElementById("deco");
+let deco2 = document.getElementById("deco2");
+let deco3 = document.getElementById("deco3");
 deco.addEventListener("click", function (e) {
     if (localStorage.getItem("Date") == null) {
         alert("Vous êtes déjà déconnecté");
