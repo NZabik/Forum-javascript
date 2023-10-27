@@ -14,6 +14,7 @@ deco.addEventListener("click", function (e) {
         e.preventDefault();
     } else {
         localStorage.removeItem("Date");
+        document.location.href = "../index.html"
         alert("Vous vous êtes déconnecté");
         e.preventDefault()
     };
