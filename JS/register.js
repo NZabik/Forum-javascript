@@ -1,4 +1,18 @@
-
+let deco = document.getElementById("deco");
+deco.addEventListener("click", function(e){
+    localStorage.removeItem("Date");
+    document.location.href = "../index.html"
+e.preventDefault()
+})
+deco2.addEventListener("click", function (e) {
+    if (localStorage.getItem("Date") == null) {
+        alert("Veuillez vous connecter");
+        e.preventDefault();
+    } else {
+        document.location.href = "../HTML/forum.html";
+        e.preventDefault();
+    };
+});
 function isEmailValid(email) {
     let re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
     return re.test(email);

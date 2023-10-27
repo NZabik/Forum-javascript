@@ -1,11 +1,24 @@
+let deco = document.getElementById("deco");
+deco.addEventListener("click", function(e){
+    localStorage.removeItem("Date");
+    document.location.href = "../index.html"
+e.preventDefault()
+})
+deco2.addEventListener("click", function (e) {
+    if (localStorage.getItem("Date") == null) {
+        alert("Veuillez vous connecter");
+        e.preventDefault();
+    } else {
+        document.location.href = "../HTML/forum.html";
+        e.preventDefault();
+    };
+});
 let sujetObject = localStorage.getItem("sujet");
 let sujet = JSON.parse(sujetObject);
-let newObject = localStorage.getItem("informations");
-let info = JSON.parse(newObject);
 let newDate = localStorage.getItem("Date");
 let dateConnex = JSON.parse(newDate);
 let i = 0;
-document.getElementById("prenom").innerHTML = info["prenom"];
+document.getElementById("prenom").innerHTML = dateConnex["prenom"];
 document.getElementById("date").innerHTML = dateConnex["date"];
 document.getElementById("heure").innerHTML = dateConnex["heure"];
 document.getElementById("register-title").innerHTML = sujet["titre"];
@@ -23,7 +36,7 @@ function addRow() {
     let c3 = document.createElement("td");
     c1.innerText = sujet;
     c2.innerText = dateNow + " " + heureNow;
-    c3.innerText = info["nom"] + " " + info["prenom"];
+    c3.innerText = dateConnex["nom"] + " " + dateConnex["prenom"];
     document.getElementById("sujet").value = "";
     row.appendChild(c1);
     row.appendChild(c2);

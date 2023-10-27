@@ -1,11 +1,24 @@
-let newObject = localStorage.getItem("informations");
-let info = JSON.parse(newObject);
+let deco = document.getElementById("deco");
+deco.addEventListener("click", function(e){
+    localStorage.removeItem("Date");
+    document.location.href = "../index.html"
+e.preventDefault()
+})
+deco2.addEventListener("click", function (e) {
+    if (localStorage.getItem("Date") == null) {
+        alert("Veuillez vous connecter");
+        e.preventDefault();
+    } else {
+        document.location.href = "../HTML/forum.html";
+        e.preventDefault();
+    };
+});
 let newDate = localStorage.getItem("Date");
 let dateConnex = JSON.parse(newDate);
 let btn = document.getElementById("btn")
 let i = 0;
 
-document.getElementById("prenom").innerHTML = info["prenom"];
+document.getElementById("prenom").innerHTML = dateConnex["prenom"];
 document.getElementById("date").innerHTML = dateConnex["date"];
 document.getElementById("heure").innerHTML = dateConnex["heure"];
 
@@ -24,7 +37,7 @@ function addRow() {
     c1.innerText = i;
     c2.innerText = sujet;
     c3.innerText = dateNow + " " + heureNow;
-    c4.innerText = info["nom"] + " " + info["prenom"];
+    c4.innerText = dateConnex["nom"] + " " + dateConnex["prenom"];
     document.getElementById("sujet").value = "";
     row.appendChild(c1);
     row.appendChild(c2);
@@ -58,7 +71,7 @@ document.forms[0].addEventListener("submit", function (evenement) {
 });
 
 const tbody = document.querySelector('#myTable tbody');
-tbody.addEventListener('click', function (e) {
+tbody.addEventListener('mouseenter', function () {
     var rows = document.getElementById("myTable").rows;
     for (i = 1; i < rows.length; i++) {
         rows[i].onclick = function () {
@@ -73,7 +86,4 @@ tbody.addEventListener('click', function (e) {
         }(rows[i]);
     }
 });
-
-
-
 
