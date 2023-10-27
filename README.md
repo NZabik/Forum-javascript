@@ -1,6 +1,11 @@
 # Evaluation-10-2023:
 
-Figma: https://www.figma.com/file/rDfLqovjY21cNtzpJlEqeD/Forum-%C3%A9valuation-10%2F2023?type=design&node-id=3%3A48&mode=design&t=eeRunzlNzx0PtSTM-1
+Figma: https://www.figma.com/file/rDfLqovjY21cNtzpJlEqeD/Forum-%C3%A9valuation-10%2F2023?type=design&node-id=3%3A41&mode=design&t=57OIpgu6kwzvkLuN-1
+
+Il y a 3 pages dans Figma, une pour chaque format.
+
+
+Site:
 
 - Accueil intégrant les deux boutons permettant soit de s'enregistrer, soit de se connecter;
 
