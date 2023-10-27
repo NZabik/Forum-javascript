@@ -19,3 +19,4 @@ Figma: https://www.figma.com/file/rDfLqovjY21cNtzpJlEqeD/Forum-%C3%A9valuation-1
       - un champ permettant la discussion, incluant le nom de l'auteur et la date/heure sur chaque ligne du tableau ainsi créé (impossible de créer un sujet vide, la bordure de la case se met en rouge);
 
 - Si l'utilisateur est déjà connecté, impossibilité de retourner sur la page de login; --> Message disant qu'on est déjà connecté.
+- Si l'utilisateur n'est pas connecté, il ne pourra pas copier/coller l'URL des pages du forum et s'y rendre, cela le redirigera vers la page de login.
