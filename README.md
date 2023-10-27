@@ -17,3 +17,5 @@ Figma: https://www.figma.com/file/rDfLqovjY21cNtzpJlEqeD/Forum-%C3%A9valuation-1
   - On peut sélectionner le sujet que l'on veut en cliquant sur la ligne du tableau, cela nous emmène sur la page de discussion incluant:
       - un titre dynamique (ainsi que le nom de la page dans l'onglet du navigateur) comportant le nom du sujet;
       - un champ permettant la discussion, incluant le nom de l'auteur et la date/heure sur chaque ligne du tableau ainsi créé (impossible de créer un sujet vide, la bordure de la case se met en rouge);
+
+- Si l'utilisateur est déjà connecté, impossibilité de retourner sur la page de login.

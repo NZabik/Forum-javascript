@@ -1,9 +1,14 @@
 let deco = document.getElementById("deco");
 deco.addEventListener("click", function (e) {
-    localStorage.removeItem("Date");
-    document.location.href = "../index.html"
-    e.preventDefault()
-})
+    if (localStorage.getItem("Date") == null) {
+        alert("Vous êtes déjà déconnecté");
+        e.preventDefault();
+    } else {
+        localStorage.removeItem("Date");
+        alert("Vous vous êtes déconnecté");
+        e.preventDefault()
+    };
+});
 deco2.addEventListener("click", function (e) {
     if (localStorage.getItem("Date") == null) {
         alert("Veuillez vous connecter");
@@ -13,7 +18,12 @@ deco2.addEventListener("click", function (e) {
         e.preventDefault();
     };
 });
-
+deco3.addEventListener("click", function (e) {
+    if (localStorage.getItem("Date") != null) {
+        alert("Vous êtes déjà connecté");
+        e.preventDefault();
+    };
+});
 let newObject = localStorage.getItem("informations");
 let info = JSON.parse(newObject);
 

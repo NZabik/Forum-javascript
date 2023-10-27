@@ -1,8 +1,15 @@
 let deco = document.getElementById("deco");
 let deco2 = document.getElementById("deco2");
-deco.addEventListener("click", function(e){
-    localStorage.removeItem("Date");
-e.preventDefault()
+let deco3 = document.getElementById("deco3");
+deco.addEventListener("click", function (e) {
+    if (localStorage.getItem("Date") == null) {
+        alert("Vous êtes déjà déconnecté");
+        e.preventDefault();
+    } else {
+        localStorage.removeItem("Date");
+        alert("Vous vous êtes déconnecté");
+        e.preventDefault()
+    };
 });
 deco2.addEventListener("click", function (e) {
     if (localStorage.getItem("Date") == null) {
@@ -13,4 +20,9 @@ deco2.addEventListener("click", function (e) {
         e.preventDefault();
     };
 });
-
+deco3.addEventListener("click", function (e) {
+    if (localStorage.getItem("Date") != null) {
+        alert("Vous êtes déjà connecté");
+        e.preventDefault();
+    };
+});

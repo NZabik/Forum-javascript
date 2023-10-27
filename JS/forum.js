@@ -1,15 +1,26 @@
 let deco = document.getElementById("deco");
-deco.addEventListener("click", function(e){
-    localStorage.removeItem("Date");
-    document.location.href = "../index.html"
-e.preventDefault()
-})
+deco.addEventListener("click", function (e) {
+    if (localStorage.getItem("Date") == null) {
+        alert("Vous êtes déjà déconnecté");
+        e.preventDefault();
+    } else {
+        localStorage.removeItem("Date");
+        alert("Vous vous êtes déconnecté");
+        e.preventDefault()
+    };
+});
 deco2.addEventListener("click", function (e) {
     if (localStorage.getItem("Date") == null) {
         alert("Veuillez vous connecter");
         e.preventDefault();
     } else {
         document.location.href = "../HTML/forum.html";
+        e.preventDefault();
+    };
+});
+deco3.addEventListener("click", function (e) {
+    if (localStorage.getItem("Date") != null) {
+        alert("Vous êtes déjà connecté");
         e.preventDefault();
     };
 });
