@@ -1,3 +1,10 @@
+window.addEventListener("load", (e) => {
+    if (localStorage.getItem("Date") == null) {
+        document.location.href = "../HTML/login.html";
+        alert("Veuillez vous connecter");
+        e.preventDefault();
+    };
+  });
 let deco = document.getElementById("deco");
 deco.addEventListener("click", function (e) {
     if (localStorage.getItem("Date") == null) {
