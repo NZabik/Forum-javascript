@@ -24,7 +24,7 @@ There are 3 pages in Figma, one for each format.
 - HTML
 - CSS
 - Javascript
-- Bootstrap
+- Bootstrap for the header
 
 
 ### Site Details
