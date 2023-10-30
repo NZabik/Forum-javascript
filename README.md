@@ -1,6 +1,7 @@
 # Evaluation-10-2023
 
 - [Evaluation-10-2023](#evaluation-10-2023)
+  - [GITHUB copy](#github-copy)
   - [Figma](#figma)
   - [Site](#site)
     - [Languages used](#languages-used)
@@ -11,6 +12,13 @@
       - [4. Login page](#4-login-page)
       - [5. Forum page](#5-forum-page)
         - [Sub-discussion forum page](#sub-discussion-forum-page)
+
+
+## GITHUB copy
+If you want to clone this repository in your GITHUB account, you can do it in your GIT terminal.
+
+Simply do a ```git clone https://github.com/NZabik/Evaluation-10-2023.git```
+
 
 ## Figma
 [Link to the figma](https://www.figma.com/file/rDfLqovjY21cNtzpJlEqeD/Forum-%C3%A9valuation-10%2F2023?type=design&node-id=3%3A41&mode=design&t=57OIpgu6kwzvkLuN-1)
