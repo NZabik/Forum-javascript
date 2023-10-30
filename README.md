@@ -15,7 +15,10 @@
 ## Figma
 [Link to the figma](https://www.figma.com/file/rDfLqovjY21cNtzpJlEqeD/Forum-%C3%A9valuation-10%2F2023?type=design&node-id=3%3A41&mode=design&t=57OIpgu6kwzvkLuN-1)
 
-There are 3 pages in Figma, one for each format.
+There are 3 pages in Figma, one for each format:
+- Desktop;
+- Tablet;
+- Mobile.
 
 
 ## Site
