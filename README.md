@@ -5,9 +5,15 @@
   - [Site:](#site)
     - [Langages utilisés:](#langages-utilisés)
     - [Détails du site:](#détails-du-site)
+      - [1. Header:](#1-header)
+      - [2. Accueil:](#2-accueil)
+      - [3. Page d'enregistrement:](#3-page-denregistrement)
+      - [4. Page de login:](#4-page-de-login)
+      - [5. Pages forum:](#5-pages-forum)
+        - [Sous-forums de discussion:](#sous-forums-de-discussion)
 
 ## Figma:
-https://www.figma.com/file/rDfLqovjY21cNtzpJlEqeD/Forum-%C3%A9valuation-10%2F2023?type=design&node-id=3%3A41&mode=design&t=57OIpgu6kwzvkLuN-1
+[Lien vers le figma](https://www.figma.com/file/rDfLqovjY21cNtzpJlEqeD/Forum-%C3%A9valuation-10%2F2023?type=design&node-id=3%3A41&mode=design&t=57OIpgu6kwzvkLuN-1)
 
 Il y a 3 pages dans Figma, une pour chaque format.
 
@@ -23,21 +29,52 @@ Il y a 3 pages dans Figma, une pour chaque format.
 
 ### Détails du site:
 
-- Accueil intégrant les deux boutons permettant soit de s'enregistrer, soit de se connecter;
+#### 1. Header:
 
-- Page d'enregistremenet avec vérifications nécessaires incluant un localStorage des données d'enregistrement; --> Message en cas d'enregistrement réussi.
+Il y a 5 boutons sur le header:
 
-- Page de login avec vérification des données d'enregistrement incluant un localStorage des données de connexion; --> Message en cas de connexion réussie.
+- Le bouton **_Accueil_**: Permet de se rendre sur la page d'accueuil correspondante.
+- Le bouton **_Forum_**: Uniquement accessible si l'utilisateur est connecté via la page de login, sinon, un message demande à l'utilisateur de se connecter.
+- Le bouton **_S'enregistrer_**: Permet de créer un compte.
+- Le bouton **_Se connecter_**: Permet de se connecter si un compte a été créé. Le bouton ne fonctionne que si l'utilisateur est déconnecté, sinon, un message apparaît pour signaler que l'utilisateur est déjà connecté.
+- Le bouton **_Se déconnecter_**: Permet de se déconnecter et vide le localStorage de connexion. Affiche un message pour valider la déconnexion.
 
-- Bouton de déconnexion effaçant le localStorage créé par la page login; --> Message en cas de déconnexion.
+#### 2. Accueil:
+Intègre les deux boutons permettant soit de s'enregistrer, soit de se connecter.
 
-- Page forum uniquement accessible si login réussi incluant 3 sous-forums de discussion (incluant la phrase de bienvenue sur chaque page); --> Message demandant de se connecter si pas connecté.
+#### 3. Page d'enregistrement:
+Inclus une vérifications nécessaire dans un localStorage des données d'enregistrement.
 
-- Sous-forums de discussion incluant un champ pour entrer le nom des différents sujets abordés (impossible de créer un sujet vide, la bordure de la case se met en rouge):
-  - Plusieurs sujets peuvent être créés à la suite des uns et des autres (incluant le nom de l'auteur et la date/heure de création du sujet);
-  - On peut sélectionner le sujet que l'on veut en cliquant sur la ligne du tableau, cela nous emmène sur la page de discussion incluant:
-      - un titre dynamique comportant le nom du sujet (ainsi que le nom de la page dans l'onglet du navigateur);
-      - un champ permettant la discussion, incluant le nom de l'auteur et la date/heure sur chaque ligne du tableau ainsi créé (impossible de créer un sujet vide, la bordure de la case se met en rouge);
+*Un message s'affiche en cas d'enregistrement réussi.*
+#### 4. Page de login:
+Inclus une vérification des données d'enregistrement dans un localStorage des données de connexion.
 
-- Si l'utilisateur est déjà connecté, impossibilité de retourner sur la page de login; --> Message disant qu'on est déjà connecté.
-- Si l'utilisateur n'est pas connecté, il ne pourra pas copier/coller l'URL des pages du forum et s'y rendre, cela le redirigera vers la page de login.
+*Un message s'affiche en cas de connexion réussie.*
+
+#### 5. Pages forum:
+Uniquement accessible si login réussi.
+Il y a 3 sous-forums de discussion.
+Un état du login est affiché en haut sur chaque page avec le nom de l'utilisateur et la date/heure de connexion.
+
+##### Sous-forums de discussion:
+- Page des sujets:
+
+Un champ permet de créer les différents sujets que l'on souhaite aborder.
+Il est impossible de créer un sujet vide, la bordure de la case se met en rouge.
+
+Plusieurs sujets peuvent être créés à la suite des uns et des autres (incluant le nom de l'auteur et la date/heure de création du sujet).
+
+On peut sélectionner le sujet que l'on veut en cliquant sur la ligne du tableau correspondante, cela nous emmène sur la page de discussion.
+
+- Page de discussion:
+
+Il y a un titre dynamique comportant le nom du sujet (ainsi que le nom de la page dans l'onglet du navigateur).
+Un champ permet de discuter sur le sujet en y mettant des commentaires.
+Il est impossible de créer un commentaire vide, la bordure de la case se met en rouge.
+Chaque nouveau message affiche le nom de l'auteur et la date/heure sur chaque ligne du tableau ainsi créé.
+
+
+Si l'utilisateur n'est pas connecté, il ne pourra pas copier/coller l'URL des pages du forum et s'y rendre, cela le redirigera vers la page de login.
+
+
+
