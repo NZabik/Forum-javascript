@@ -15,7 +15,7 @@
 ## Figma
 [Link to the figma](https://www.figma.com/file/rDfLqovjY21cNtzpJlEqeD/Forum-%C3%A9valuation-10%2F2023?type=design&node-id=3%3A41&mode=design&t=57OIpgu6kwzvkLuN-1)
 
-Il y a 3 pages dans Figma, une pour chaque format.
+There are 3 pages in Figma, one for each format.
 
 
 ## Site
@@ -60,24 +60,23 @@ There are 3 discussion sub-forums.
 A login status is displayed at the top of each page with the user name and login date/time.
 
 ##### Sub-discussion forum page
-- Page des sujets:
+- Topics page:
 
-Un champ permet de créer les différents sujets que l'on souhaite aborder.
-Il est impossible de créer un sujet vide, la bordure de la case se met en rouge.
+A field allows you to create the different topics you want to discuss.
+It is impossible to create an empty subject, the border of the box turns red.
 
-Plusieurs sujets peuvent être créés à la suite des uns et des autres (incluant le nom de l'auteur et la date/heure de création du sujet).
+Several topics can be created one after the other (including the name of the author and the date/time the topic was created).
 
-On peut sélectionner le sujet que l'on veut en cliquant sur la ligne du tableau correspondante, cela nous emmène sur la page de discussion.
+You can select the topic you want to discuss by clicking on the corresponding table row, this takes you to the corresponding discussion page.
 
-- Page de discussion:
+- Discussion page:
 
-Il y a un titre dynamique comportant le nom du sujet (ainsi que le nom de la page dans l'onglet du navigateur).
-Un champ permet de discuter sur le sujet en y mettant des commentaires.
-Il est impossible de créer un commentaire vide, la bordure de la case se met en rouge.
-Chaque nouveau message affiche le nom de l'auteur et la date/heure sur chaque ligne du tableau ainsi créé.
+There is a dynamic title including the topic name (as well as the page name in the browser tab).
+A field allows you to discuss the subject by adding comments.
+It is impossible to create an empty comment, the border of the box turns red.
+Each new message displays the author's name and the date/time on each line of the table thus created.
 
 
-Si l'utilisateur n'est pas connecté, il ne pourra pas copier/coller l'URL des pages du forum et s'y rendre, cela le redirigera vers la page de login.
-
+If the user is not logged in, he will not be able to copy/paste the URL of the forum pages and go there, this will redirect him to the login page.
 
 
