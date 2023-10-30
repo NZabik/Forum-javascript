@@ -57,7 +57,10 @@ Includes the necessary checks from the data saved in the register LocalStorage.
 #### 5. Forum page
 Only accessible if login is successful.
 There are 3 discussion sub-forums.
+
 A login status is displayed at the top of each page with the user name and login date/time.
+
+If the user is not logged in, he will not be able to copy/paste the URL of the forum pages and go there, this will redirect him to the login page.
 
 ##### Sub-discussion forum page
 - Topics page:
@@ -75,8 +78,5 @@ There is a dynamic title including the topic name (as well as the page name in t
 A field allows you to discuss the subject by adding comments.
 It is impossible to create an empty comment, the border of the box turns red.
 Each new message displays the author's name and the date/time on each line of the table thus created.
-
-
-If the user is not logged in, he will not be able to copy/paste the URL of the forum pages and go there, this will redirect him to the login page.
 
 
