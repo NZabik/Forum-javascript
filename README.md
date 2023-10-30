@@ -3,60 +3,63 @@
 - [Evaluation-10-2023](#evaluation-10-2023)
   - [Figma](#figma)
   - [Site](#site)
-    - [Langages utilisés](#langages-utilisés)
-    - [Détails du site](#détails-du-site)
+    - [Languages used](#languages-used)
+    - [Site Details](#site-details)
       - [1. Header](#1-header)
-      - [2. Accueil](#2-accueil)
-      - [3. Page d'enregistrement](#3-page-denregistrement)
-      - [4. Page de login](#4-page-de-login)
-      - [5. Pages forum](#5-pages-forum)
-        - [Sous-forums de discussion](#sous-forums-de-discussion)
+      - [2. Home](#2-home)
+      - [3. Registration page](#3-registration-page)
+      - [4. Login page](#4-login-page)
+      - [5. Forum page](#5-forum-page)
+        - [Sub-discussion forum page](#sub-discussion-forum-page)
 
 ## Figma
-[Lien vers le figma](https://www.figma.com/file/rDfLqovjY21cNtzpJlEqeD/Forum-%C3%A9valuation-10%2F2023?type=design&node-id=3%3A41&mode=design&t=57OIpgu6kwzvkLuN-1)
+[Link to the figma](https://www.figma.com/file/rDfLqovjY21cNtzpJlEqeD/Forum-%C3%A9valuation-10%2F2023?type=design&node-id=3%3A41&mode=design&t=57OIpgu6kwzvkLuN-1)
 
 Il y a 3 pages dans Figma, une pour chaque format.
 
 
 ## Site
 
-### Langages utilisés
+### Languages used
 - HTML
 - CSS
 - Javascript
 - Bootstrap
 
 
-### Détails du site
+### Site Details
 
 #### 1. Header
 
-Il y a 5 boutons sur le header:
+There are 5 buttons on the header:
 
-- Le bouton **_Accueil_**: Permet de se rendre sur la page d'accueuil correspondante.
-- Le bouton **_Forum_**: Uniquement accessible si l'utilisateur est connecté via la page de login, sinon, un message demande à l'utilisateur de se connecter.
-- Le bouton **_S'enregistrer_**: Permet de créer un compte.
-- Le bouton **_Se connecter_**: Permet de se connecter si un compte a été créé. Le bouton ne fonctionne que si l'utilisateur est déconnecté, sinon, un message apparaît pour signaler que l'utilisateur est déjà connecté.
-- Le bouton **_Se déconnecter_**: Permet de se déconnecter et vide le localStorage de connexion. Affiche un message pour valider la déconnexion.
+- The **_Accueil_** button: Allows you to go to the corresponding home page.
+- The **_Forum_** button: Only accessible if the user is connected via the login page, otherwise, a message asks the user to log in.
+- The **_S'enregistrer_** button: Allows you to create an account.
+- The **_Se connecter_** button: Allows you to log in if an account has been created. The button only works if the user is logged out, otherwise a message appears to indicate that the user is already logged in.
+- The **_Se déconnecter_** button: Allows you to disconnect and empty the log in LocalStorage. Displays a message to validate the disconnection.
 
-#### 2. Accueil
-Intègre les deux boutons permettant soit de s'enregistrer, soit de se connecter.
+#### 2. Home
+Includes two buttons allowing you to either register or log in.
 
-#### 3. Page d'enregistrement
-Inclus une vérifications nécessaire dans un localStorage des données d'enregistrement.
+#### 3. Registration page
+Includes the necessary checks in the registration datas, such as the name length, the mail typo verification, the password requirements...etc...
 
-*Un message s'affiche en cas d'enregistrement réussi.*
-#### 4. Page de login
-Inclus une vérification des données d'enregistrement dans un localStorage des données de connexion.
+The register LocalStorage is filled with all the data gathered during the resgister completion.
 
-*Un message s'affiche en cas de connexion réussie.*
+*A message is displayed upon successful registration.*
 
-#### 5. Pages forum
-Uniquement accessible si login réussi.
-Il y a 3 sous-forums de discussion.
-Un état du login est affiché en haut sur chaque page avec le nom de l'utilisateur et la date/heure de connexion.
+#### 4. Login page
+Includes the necessary checks from the data saved in the register LocalStorage.
 
-##### Sous-forums de discussion
+*A message is displayed upon successful connection.*
+
+#### 5. Forum page
+Only accessible if login is successful.
+There are 3 discussion sub-forums.
+A login status is displayed at the top of each page with the user name and login date/time.
+
+##### Sub-discussion forum page
 - Page des sujets:
 
 Un champ permet de créer les différents sujets que l'on souhaite aborder.
