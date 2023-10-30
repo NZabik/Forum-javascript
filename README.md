@@ -1,35 +1,35 @@
-# Evaluation-10-2023:
+# Evaluation-10-2023
 
-- [Evaluation-10-2023:](#evaluation-10-2023)
-  - [Figma:](#figma)
-  - [Site:](#site)
-    - [Langages utilisés:](#langages-utilisés)
-    - [Détails du site:](#détails-du-site)
-      - [1. Header:](#1-header)
-      - [2. Accueil:](#2-accueil)
-      - [3. Page d'enregistrement:](#3-page-denregistrement)
-      - [4. Page de login:](#4-page-de-login)
-      - [5. Pages forum:](#5-pages-forum)
-        - [Sous-forums de discussion:](#sous-forums-de-discussion)
+- [Evaluation-10-2023](#evaluation-10-2023)
+  - [Figma](#figma)
+  - [Site](#site)
+    - [Langages utilisés](#langages-utilisés)
+    - [Détails du site](#détails-du-site)
+      - [1. Header](#1-header)
+      - [2. Accueil](#2-accueil)
+      - [3. Page d'enregistrement](#3-page-denregistrement)
+      - [4. Page de login](#4-page-de-login)
+      - [5. Pages forum](#5-pages-forum)
+        - [Sous-forums de discussion](#sous-forums-de-discussion)
 
-## Figma:
+## Figma
 [Lien vers le figma](https://www.figma.com/file/rDfLqovjY21cNtzpJlEqeD/Forum-%C3%A9valuation-10%2F2023?type=design&node-id=3%3A41&mode=design&t=57OIpgu6kwzvkLuN-1)
 
 Il y a 3 pages dans Figma, une pour chaque format.
 
 
-## Site:
+## Site
 
-### Langages utilisés:
+### Langages utilisés
 - HTML
 - CSS
 - Javascript
 - Bootstrap
 
 
-### Détails du site:
+### Détails du site
 
-#### 1. Header:
+#### 1. Header
 
 Il y a 5 boutons sur le header:
 
@@ -39,24 +39,24 @@ Il y a 5 boutons sur le header:
 - Le bouton **_Se connecter_**: Permet de se connecter si un compte a été créé. Le bouton ne fonctionne que si l'utilisateur est déconnecté, sinon, un message apparaît pour signaler que l'utilisateur est déjà connecté.
 - Le bouton **_Se déconnecter_**: Permet de se déconnecter et vide le localStorage de connexion. Affiche un message pour valider la déconnexion.
 
-#### 2. Accueil:
+#### 2. Accueil
 Intègre les deux boutons permettant soit de s'enregistrer, soit de se connecter.
 
-#### 3. Page d'enregistrement:
+#### 3. Page d'enregistrement
 Inclus une vérifications nécessaire dans un localStorage des données d'enregistrement.
 
 *Un message s'affiche en cas d'enregistrement réussi.*
-#### 4. Page de login:
+#### 4. Page de login
 Inclus une vérification des données d'enregistrement dans un localStorage des données de connexion.
 
 *Un message s'affiche en cas de connexion réussie.*
 
-#### 5. Pages forum:
+#### 5. Pages forum
 Uniquement accessible si login réussi.
 Il y a 3 sous-forums de discussion.
 Un état du login est affiché en haut sur chaque page avec le nom de l'utilisateur et la date/heure de connexion.
 
-##### Sous-forums de discussion:
+##### Sous-forums de discussion
 - Page des sujets:
 
 Un champ permet de créer les différents sujets que l'on souhaite aborder.
