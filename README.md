@@ -1,4 +1,4 @@
-# Evaluation-10-2023
+# Forum Javascript
 
 - [Evaluation-10-2023](#evaluation-10-2023)
   - [GITHUB copy](#github-copy)
@@ -17,7 +17,7 @@
 ## GITHUB copy
 If you want to clone this repository in your GITHUB account, you can do it in your GIT terminal.
 
-Simply do a ```git clone https://github.com/NZabik/Evaluation-10-2023.git```
+Simply do a ```git clone https://github.com/NZabik/Forum-javascript.git```
 
 
 ## Figma
